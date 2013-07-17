@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.customactivities"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.customactivities.MainActivity"
+            android:label="@string/app_name" >
+             <Button
+        		android:id="@+id/button1"
+     			android:layout_height="wrap_content"
+     			android:layout_width="wrap_content"
+     			android:text="@string/change_view"
+    			android:onClick="changeView" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.customactivities.ActivityTwo"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>
